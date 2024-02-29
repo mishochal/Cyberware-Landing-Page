@@ -1,0 +1,361 @@
+body {
+    line-height: normal;
+}
+
+header {
+    background-image: url(./images/home/header-background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-body {
+    padding: 271px 0 355px;
+}
+
+.header-body-content {
+    max-width: 1120px;
+    padding: 0 20px;
+    margin: auto;
+    text-align: center;
+}
+
+.header-body-content .main-title {
+    font-size: 70px;
+    font-weight: 700;
+    color: white;
+    line-height: 85px;
+}
+
+.header-desc {
+    margin: 40px 0;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.header-btns {
+    display: flex;
+    justify-content: center;
+    gap: 42px;
+}
+
+.header-body-btn {
+    padding: 13px 33px;
+    border: 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+main {
+    background: linear-gradient(to bottom, #060307, #090a26 40% 100%);
+}
+
+section {
+    padding-bottom: 130px;
+}
+
+.partner-companies-section {
+    padding-top: 124px;
+    text-align: center;
+}
+
+.partners-header {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.companies {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.companies img {
+    width: 100%;
+}
+
+.section-header {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.implants {
+    display: flex;
+    gap: 20px;
+}
+
+.implant-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 68px 55px 0;
+    height: 550px;
+    text-align: center;
+    color: white;
+}
+
+.implant-name {
+    margin: 15px 0 49px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.implant-desc {
+    font-size: 14px;
+}
+
+.new-implant-card {
+    border: 3px solid #E15CF2;
+}
+
+.popular-implant-card {
+    border: 3px solid #6892FF
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.carousel-inner {
+    width: fit-content;
+}
+
+.carousel-item {
+    margin: auto;
+}
+
+.carousel-item.active {
+    display: flex;
+    gap: 20px;
+}
+
+.carousel-indicators {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    bottom: -75px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 17px;
+    height: 17px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: fit-content;
+    padding: 0 20px;
+    opacity: 1;
+}
+
+.about-us-body {
+    background: url(./images/home/who-are-we/background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 87px 0;
+}
+
+.about-us-content {
+    width: 320px;
+    text-align: center;
+    margin-left: auto;
+}
+
+.about-us-info {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 39px;
+    color: white;
+    margin-bottom: 41px;
+}
+
+.learn-more-btn {
+    padding: 13px 33px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+}
+
+.members {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.member-card {
+    text-align: center;
+}
+
+.member-img {
+    width: 100%;
+    display: block;
+}
+
+.member-position {
+    margin: 80px 0 20px;
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+}
+
+.member-name {
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+}
+
+
+
+
+@media screen and (max-width: 1175px) {
+
+    .section-header {
+        font-size: 24px;
+        margin-bottom: 75px;
+    }
+
+    .implants {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .implant-card {
+        padding: 30px 40px;
+        flex-direction: row;
+        gap: 40px;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .implant-text {
+        max-width: 300px
+    }
+
+    .carousel-item.active {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 997px) {
+
+    .companies {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+    }
+
+    .implant-card {
+        padding: 15px 20px;
+        gap: 15px;
+    }
+
+    .implant-img {
+        width: 200px;
+    }
+
+    .implant-text {
+        max-width: 200px;
+    }
+
+    .implant-name {
+        margin: 10px 0 20px;
+    }
+
+    .members {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+    }
+
+    .member-card {
+        width: fit-content;
+    }
+
+    .member-img {
+        max-width: 220px;
+    }
+
+    .member-position {
+        margin: 25px 0 10px;
+    }
+}
+
+
+@media screen and (max-width: 624px) {
+
+    .header-body-content .main-title {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .header-desc {
+        font-size: 20px;
+    }
+
+    .header-btns {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .header-body-btn {
+        width: 210px;
+        margin: auto;
+    }
+
+    .section-header {
+        padding: 0 10px;
+        font-size: 22px;
+    }
+
+    .implant-card {
+        flex-direction: column;
+    }
+
+    .implant-img {
+        width: 160px;
+    }
+
+    .arrow-btn {
+        display: none;
+    }
+
+    .about-us-body {
+        padding: 40px 0;
+    }
+
+    .about-us-content {
+        margin: auto;
+    }
+
+    .about-us-info {
+        color: #ddd;
+        font-size: 24px;
+        text-shadow: 1px 1px 2px red, 0 0 1em black, 0 0 0.2em black;
+    }
+
+    .members {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .member-position {
+        font-size: 22px;
+    }
+}

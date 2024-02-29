@@ -1,0 +1,67 @@
+header {
+    position: absolute;
+    width: 100%;
+}
+
+main {
+    background-color: #090a26;
+}
+
+section {
+    padding-bottom: 130px;
+}
+
+.girl-section-body {
+    background: url(./images/about-us/girl-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 235px 0 332px;
+}
+
+.section-content {
+    max-width: 465px;
+}
+
+.girl-section-body .section-content {
+    margin-left: auto;
+}
+
+.game-description {
+    font-size: 18px;
+    line-height: 38.9px;
+    color: white;
+    margin-bottom: 48px;
+}
+
+.section-header {
+    margin-bottom: 90px;
+    font-size: 24px;
+    color: white;
+}
+
+.city-section-body {
+    background: url(./images/about-us/city-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 195px 0;
+}
+
+@media screen and (max-width: 595px) {
+
+    .section-header {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .girl-section-body,
+    .city-section-body {
+        padding: 160px 0;
+    }
+
+    .game-description {
+        font-size: 16px;
+        line-height: 30px;
+    }
+}
